@@ -70,6 +70,10 @@ class AnswerScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 30.0,
+              ),
+              buttonGoMain(context)
             ])));
   }
 
@@ -107,5 +111,28 @@ class AnswerScreen extends StatelessWidget {
     } else {
       return "Next question";
     }
+  }
+
+  Widget buttonGoMain(BuildContext context) {
+    return ButtonTheme(
+      minWidth: 100.0,
+      height: 75.0,
+      child: FlatButton(
+        color: Colors.white,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MyHomePage()),
+          );
+        },
+        child: Text(
+          "Go to Main Menu",
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 20,
+          ),
+        ),
+      ),
+    );
   }
 }
