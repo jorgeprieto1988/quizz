@@ -81,19 +81,27 @@ class AnswerScreen extends StatelessWidget {
     settings.setquestionCounter(settings.getquestionCounter() + 1);
     if (userAnswer == correctAnswer) {
       settings.setcorrectQuestions(settings.getcorrectQuestions() + 1);
-      return Text(
-        "Congratulations you have answered correctly!",
-        style: TextStyle(
-          fontSize: 20,
-        ),
-      );
+      return Container(
+          decoration: BoxDecoration(
+              border: Border.all(
+                  width: 4.0, color: Color.fromARGB(255, 18, 231, 82))),
+          child: Text(
+            "Congratulations you have answered correctly!",
+            style: TextStyle(
+              fontSize: 20,
+            ),
+          ));
     } else {
-      return Text(
-        "Sorry, that is not the correct answer",
-        style: TextStyle(
-          fontSize: 20,
-        ),
-      );
+      return Container(
+          decoration: BoxDecoration(
+              border: Border.all(
+                  width: 4.0, color: Color.fromARGB(255, 241, 47, 13))),
+          child: Text(
+            "Sorry, that is not the correct answer",
+            style: TextStyle(
+              fontSize: 20,
+            ),
+          ));
     }
   }
 
