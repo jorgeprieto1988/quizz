@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: Colors.green,
-                    fontSize: 30.0,
+                    fontSize: 50.0,
                   ),
                   children: [
                     TextSpan(
@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
                       style: TextStyle(
                         fontStyle: FontStyle.italic,
                         color: Colors.black,
-                        fontSize: 30.0,
+                        fontSize: 50.0,
                       ),
                     ),
                     TextSpan(
@@ -57,13 +57,14 @@ class MyHomePage extends StatelessWidget {
                       style: TextStyle(
                         fontStyle: FontStyle.italic,
                         color: Colors.red,
-                        fontSize: 30.0,
+                        fontSize: 50.0,
                       ),
                     ),
                   ],
                 ),
               ),
-              Text("A Trivia game of True or False questions"),
+              Text("A Trivia game of True or False questions",
+                  style: TextStyle(fontSize: 18)),
               SizedBox(
                 height: 50.0,
               ),
