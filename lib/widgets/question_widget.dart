@@ -51,7 +51,7 @@ class _QuestionWidget extends State<QuestionWidget> {
                     child: Text(
                       snapshot.data.questionText,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20, color: Colors.white),
+                      style: TextStyle(fontSize: 30, color: Colors.white),
                     ),
                   ),
                   SizedBox(
@@ -78,7 +78,7 @@ class _QuestionWidget extends State<QuestionWidget> {
                       },
                       child: Text(
                         'TRUE',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 25),
                       ),
                     ),
                   ),
@@ -106,7 +106,7 @@ class _QuestionWidget extends State<QuestionWidget> {
                       },
                       child: Text(
                         'FALSE',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 25),
                       ),
                     ),
                   ),

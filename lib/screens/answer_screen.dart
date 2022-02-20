@@ -83,24 +83,23 @@ class AnswerScreen extends StatelessWidget {
       settings.setcorrectQuestions(settings.getcorrectQuestions() + 1);
       return Container(
           decoration: BoxDecoration(
-              border: Border.all(
-                  width: 4.0, color: Color.fromARGB(255, 18, 231, 82))),
+              color: Colors.green,
+              border: Border.all(width: 4.0, color: Colors.green)),
           child: Text(
             "Congratulations you have answered correctly!",
-            style: TextStyle(
-              fontSize: 20,
-            ),
+            style: TextStyle(fontSize: 30, color: Colors.white),
+            textAlign: TextAlign.center,
           ));
     } else {
       return Container(
           decoration: BoxDecoration(
+              color: Color.fromARGB(255, 241, 47, 13),
               border: Border.all(
-                  width: 4.0, color: Color.fromARGB(255, 241, 47, 13))),
+                  width: 10.0, color: Color.fromARGB(255, 241, 47, 13))),
           child: Text(
             "Sorry, that is not the correct answer",
-            style: TextStyle(
-              fontSize: 20,
-            ),
+            style: TextStyle(fontSize: 30, color: Colors.white),
+            textAlign: TextAlign.center,
           ));
     }
   }
